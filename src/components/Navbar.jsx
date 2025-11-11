@@ -9,6 +9,7 @@ const Navbar = ({ scrollToSection, activeSection }) => {
         <ul className="nav-links">
           <li>
             <a 
+            href="#home"
               onClick={() => scrollToSection('home')}
               className={activeSection === 'home' ? 'active' : ''}
             >
@@ -17,6 +18,7 @@ const Navbar = ({ scrollToSection, activeSection }) => {
           </li>
           <li>
             <a 
+            href="#about"
               onClick={() => scrollToSection('about')}
               className={activeSection === 'about' ? 'active' : ''}
             >
@@ -25,6 +27,7 @@ const Navbar = ({ scrollToSection, activeSection }) => {
           </li>
           <li>
             <a 
+             href="#skills"
               onClick={() => scrollToSection('skills')}
               className={activeSection === 'skills' ? 'active' : ''}
             >
@@ -33,6 +36,7 @@ const Navbar = ({ scrollToSection, activeSection }) => {
           </li>
           <li>
             <a 
+           href="#experience"
               onClick={() => scrollToSection('experience')}
               className={activeSection === 'experience' ? 'active' : ''}
             >
@@ -41,6 +45,7 @@ const Navbar = ({ scrollToSection, activeSection }) => {
           </li>
           <li>
             <a 
+            href="#education"
               onClick={() => scrollToSection('education')}
               className={activeSection === 'education' ? 'active' : ''}
             >
@@ -49,6 +54,7 @@ const Navbar = ({ scrollToSection, activeSection }) => {
           </li>
           <li>
             <a 
+            href="#contact"
               onClick={() => scrollToSection('contact')}
               className={activeSection === 'contact' ? 'active' : ''}
             >
