@@ -11,7 +11,7 @@ const Hero = ({ scrollToSection }) => {
             Bonjour, je suis <br/>
             <span className="highlight">Makan DIABATE</span>
           </h1>
-          <p>Développeuse Full stack junior | Étudiante en Master SIGL à l'ESATIC</p>
+          <p>Développeuse Full stack junior | Ingenieur génie logiciel </p>
           <div className="hero-buttons">
             <button className="btn btn-primary" onClick={() => scrollToSection('contact')}>
               Me Contacter

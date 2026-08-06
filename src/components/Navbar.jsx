@@ -5,7 +5,7 @@ const Navbar = ({ scrollToSection, activeSection }) => {
   return (
     <nav className="navbar">
       <div className="nav-content">
-        <div className="logo">MD</div>
+        <div className="logo">MKD</div>
         <ul className="nav-links">
           <li>
             <a 
@@ -41,6 +41,15 @@ const Navbar = ({ scrollToSection, activeSection }) => {
               className={activeSection === 'experience' ? 'active' : ''}
             >
               Expériences
+            </a>
+          </li>
+          <li>
+            <a 
+            href="#projects"
+              onClick={() => scrollToSection('projects')}
+              className={activeSection === 'projects' ? 'active' : ''}
+            >
+              Projets
             </a>
           </li>
           <li>

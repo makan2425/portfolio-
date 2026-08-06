@@ -1,0 +1,268 @@
+.projects-section {
+  padding-top: 4rem;
+}
+
+.projects-list {
+  display: grid;
+  gap: 4rem;
+}
+
+.project-case {
+  display: grid;
+  gap: 2rem;
+}
+
+.project-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.35rem;
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.project-hero img {
+  width: 100%;
+  max-height: 78vh;
+  object-fit: contain;
+  /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));*/
+  /*border-radius: 1.25rem;*/
+  /*box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);*/
+}
+
+.project-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.project-media {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.project-gallery {
+  display: grid;
+  gap: 1rem;
+  align-items: start;
+}
+
+.project-gallery-web {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.project-gallery-mobile {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.project-gallery-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  overflow: hidden;
+}
+
+.project-gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-video-secondary {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.project-video-secondary h4 {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  color: #8cd1ff;
+}
+
+.project-video-player {
+  width: 100%;
+  /*border-radius: 1rem;*/
+  min-height: 260px;
+  object-fit: cover;
+  display: block;
+ 
+}
+
+.project-video-secondary .project-video-player {
+  min-height: 220px;
+  aspect-ratio: 16 / 9;
+}
+
+.project-case-mobile .project-video-secondary .project-video-player {
+  aspect-ratio: 9 / 16;
+}
+
+.project-case-mobile .project-video {
+  display: block;
+}
+
+.project-case-web .project-video {
+  display: block;
+}
+
+.project-video {
+  position: relative;
+  min-height: 0;
+  aspect-ratio: 16 / 9;
+  /*border-radius: 1.25rem;*/
+  overflow: hidden;
+  /*background: rgba(255, 255, 255, 0.04);*/
+}
+
+.project-case-mobile .project-video {
+  aspect-ratio: 9 / 16;
+}
+
+.project-video-player,
+.project-video-fallback img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+ 
+}
+
+.project-video-fallback {
+  position: relative;
+  display: grid;
+}
+
+.project-video-fallback-text {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.85rem;
+  font-size: 0.95rem;
+}
+
+.project-summary {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.project-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.project-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #9be3ff;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.project-label h3 {
+  font-size: clamp(1.6rem, 2vw, 2.2rem);
+  margin: 0;
+}
+
+.project-tagline {
+  color: #c8d7f1;
+  line-height: 1.7;
+}
+
+.project-meta {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.project-meta h4,
+.project-features-block h4,
+.project-stack-block h4,
+.project-result h4 {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  color: #8cd1ff;
+}
+
+.project-meta p,
+.project-result p {
+  color: #d9e6ff;
+  line-height: 1.75;
+}
+
+.project-features {
+  display: grid;
+  gap: 0.75rem;
+  padding-left: 1.2rem;
+  list-style: disc;
+  color: #d3e5ff;
+}
+
+.project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.project-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 0.85rem;
+}
+
+.project-result {
+  padding: 1.4rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.04);
+  border-left: 4px solid #67d4ff;
+}
+
+@media (min-width: 720px) {
+  .project-gallery-web {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .project-gallery-mobile {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 980px) {
+  .wellness-showcase {
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+  }
+
+  .project-grid {
+    grid-template-columns: 1.4fr 0.9fr;
+    align-items: start;
+  }
+
+  .project-media {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .project-video {
+    min-height: 220px;
+  }
+
+  .project-gallery-item img {
+    min-height: 150px;
+  }
+}

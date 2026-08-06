@@ -29,7 +29,7 @@ export const certificationsData = [
   {
     title: 'Certificat d\'Honneur - Championnat National de Robotique',
     organization: 'ONG DynExcAfrica',
-    date: 'Juillet 2025',
+    date: 'Juillet 2026',
     description: 'Reconnaissance pour rôle de jury avec professionnalisme et intégrité'
   }
 ];

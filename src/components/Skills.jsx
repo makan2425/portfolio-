@@ -1,11 +1,12 @@
 import React from 'react';
 import { 
-  FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, 
-  FaDatabase, FaProjectDiagram, FaSitemap, 
-  FaStar, FaChartBar, FaSyncAlt, FaFileAlt, FaBook,
-  FaLaptopCode, FaServer, FaDraftingCompass, FaTasks
+  FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaJava,
+  FaDatabase, FaProjectDiagram, FaSitemap, FaStar, FaChartBar,
+  FaSyncAlt, FaFileAlt, FaBook, FaLaptopCode, FaServer,
+  FaDraftingCompass, FaTasks, FaGithub, FaGitlab, FaFigma,
+  FaJira, FaTrello, FaFileWord, FaFilePowerpoint, FaAngular
 } from 'react-icons/fa';
-import { SiDjango, SiNextdotjs, SiPostgresql, SiSqlite, SiPowerbi } from 'react-icons/si';
+import { SiDjango, SiNextdotjs, SiPostgresql, SiSqlite, SiPowerbi, SiSpringboot, SiRedis } from 'react-icons/si';
 import '../styles/Skills.css';
 
 const Skills = () => {
@@ -18,6 +19,7 @@ const Skills = () => {
         { name: 'CSS', icon: 'css', color: '#1572B6' },
         { name: 'JavaScript', icon: 'js', color: '#F7DF1E' },
         { name: 'React JS', icon: 'react', color: '#61DAFB' },
+        { name: 'Angular', icon: 'angular', color: '#DD0031' },
         { name: 'Next JS', icon: 'nextjs', color: '#000000' }
       ]
     },
@@ -26,7 +28,10 @@ const Skills = () => {
       icon: 'server',
       skills: [
         { name: 'Django', icon: 'django', color: '#092E20' },
-        { name: 'Express.js', icon: 'node', color: '#339933' }
+        { name: 'Node.js', icon: 'node', color: '#339933' },
+        { name: 'Java', icon: 'java', color: '#007396' },
+        { name: 'Spring Boot', icon: 'springboot', color: '#6DB33F' },
+        { name: 'API REST', icon: 'rest', color: '#5F6F81' }
       ]
     },
     {
@@ -34,7 +39,8 @@ const Skills = () => {
       icon: 'database',
       skills: [
         { name: 'PostgreSQL', icon: 'postgresql', color: '#4169E1' },
-        { name: 'SQLite', icon: 'sqlite', color: '#003B57' }
+        { name: 'SQLite', icon: 'sqlite', color: '#003B57' },
+        { name: 'Redis', icon: 'redis', color: '#DC382D' }
       ]
     },
     {
@@ -47,19 +53,24 @@ const Skills = () => {
       ]
     },
     {
-      title: 'Business Intelligence',
+      title: 'Outils collaboratifs & Gestion',
       icon: 'chart',
       skills: [
-        { name: 'Power BI', icon: 'powerbi', color: '#F2C811' }
+        { name: 'Power BI', icon: 'powerbi', color: '#F2C811' },
+        { name: 'GitHub', icon: 'github', color: '#181717' },
+        { name: 'GitLab', icon: 'gitlab', color: '#FC6D26' },
+        { name: 'Figma', icon: 'figma', color: '#F24E1E' },
+        { name: 'Jira', icon: 'jira', color: '#0052CC' },
+        { name: 'Trello', icon: 'trello', color: '#0052CC' }
       ]
     },
     {
-      title: 'Méthodologie',
+      title: 'Méthodologie & Bureautiques',
       icon: 'tasks',
       skills: [
         { name: 'Agile/Scrum', icon: 'sync', color: '#0052CC' },
-        { name: 'Cahiers des charges', icon: 'file', color: '#2C3E50' },
-        { name: 'Documentation', icon: 'book', color: '#16A085' }
+        { name: 'Word', icon: 'word', color: '#2B579A' },
+        { name: 'PowerPoint', icon: 'ppt', color: '#D24726' }
       ]
     }
   ];
@@ -72,18 +83,30 @@ const Skills = () => {
       case 'css': return <FaCss3Alt {...iconProps} />;
       case 'js': return <FaJs {...iconProps} />;
       case 'react': return <FaReact {...iconProps} />;
+      case 'angular': return <FaAngular {...iconProps} />;
       case 'nextjs': return <SiNextdotjs {...iconProps} />;
       case 'django': return <SiDjango {...iconProps} />;
       case 'node': return <FaNodeJs {...iconProps} />;
+      case 'java': return <FaJava {...iconProps} />;
+      case 'springboot': return <SiSpringboot {...iconProps} />;
+      case 'rest': return <FaServer {...iconProps} />;
       case 'postgresql': return <SiPostgresql {...iconProps} />;
       case 'sqlite': return <SiSqlite {...iconProps} />;
+      case 'redis': return <SiRedis {...iconProps} />;
       case 'diagram': return <FaProjectDiagram {...iconProps} />;
       case 'sitemap': return <FaSitemap {...iconProps} />;
       case 'star': return <FaStar {...iconProps} />;
       case 'powerbi': return <SiPowerbi {...iconProps} />;
+      case 'github': return <FaGithub {...iconProps} />;
+      case 'gitlab': return <FaGitlab {...iconProps} />;
+      case 'figma': return <FaFigma {...iconProps} />;
+      case 'jira': return <FaJira {...iconProps} />;
+      case 'trello': return <FaTrello {...iconProps} />;
       case 'sync': return <FaSyncAlt {...iconProps} />;
       case 'file': return <FaFileAlt {...iconProps} />;
       case 'book': return <FaBook {...iconProps} />;
+      case 'word': return <FaFileWord {...iconProps} />;
+      case 'ppt': return <FaFilePowerpoint {...iconProps} />;
       case 'laptop': return <FaLaptopCode size={24} />;
       case 'server': return <FaServer size={24} />;
       case 'database': return <FaDatabase size={24} />;

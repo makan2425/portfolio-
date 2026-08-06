@@ -7,19 +7,11 @@ const About = () => {
       <h2 className="section-title">À Propos de Moi</h2>
       <div className="about-content">
         <p className="about-text">
-          Étudiante en Master Systèmes d'Information et Génie Logiciel (SIGL) à l'ESATIC, 
-          je suis passionnée par le développement d'applications web et l'automatisation de 
-          processus métiers. J'ai eu l'opportunité de participer à l'ensemble du cycle de vie 
-          de projets, de la rédaction du cahier des charges à la mise en œuvre de la solution finale.
-        </p>
-        <p className="about-text">
-          Sérieuse, rigoureuse et dynamique, j'adopte une approche structurée et orientée résultats 
-          dans chacune de mes missions. Mon expérience chez TAFI SA m'a permis de développer des 
-          compétences solides en digitalisation de processus et en gestion de projet.
+          Titulaire d'un Master Systèmes d'Information et Génie Logiciel (SIGL), je conçois des applications web et mobiles fi ables et performantes.Rigoureuse et passionnée par le génie logiciel, je souhaite mettre mes compétences au service de vos projets numériques tout en continuant d'apprendre au sein de votre équipe.
         </p>
         <div className="stats">
           <div className="stat-card">
-            <div className="stat-number">4+</div>
+            <div className="stat-number">3+</div>
             <div className="stat-label">Projets Réalisés</div>
           </div>
           <div className="stat-card">
@@ -27,7 +19,7 @@ const About = () => {
             <div className="stat-label">Années d'Expérience</div>
           </div>
           <div className="stat-card">
-            <div className="stat-number">10+</div>
+            <div className="stat-number">5+</div>
             <div className="stat-label">Technologies Maîtrisées</div>
           </div>
         </div>
